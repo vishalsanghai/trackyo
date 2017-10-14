@@ -542,8 +542,8 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	border-bottom-right-radius: 10000px;
 	margin: 0px;
 	padding: 8px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
 	text-decoration: none;
