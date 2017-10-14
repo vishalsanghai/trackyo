@@ -34,6 +34,10 @@ Other things I would require:
 	--mfeatureheading: #19164d;
 	--background-color: #fff;
 }
+.loader{
+
+}
+
 body{
 font-family: 'Open Sans', sans-serif;
 }	
@@ -60,6 +64,10 @@ font-family: 'Open Sans', sans-serif;
  	color : var(--mgrey);*/
 }
 .homeVideo{
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -69,7 +77,7 @@ font-family: 'Open Sans', sans-serif;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- 	background: url('../media/bg-2.jpg') no-repeat;
+ 	/*background: url('../media/bg-2.jpg') no-repeat;*/
  	background-size: cover;
   	transition: 1s opacity;
 }
@@ -85,7 +93,7 @@ header{
 	height: 80px;
 }
 .logo{
-	padding-left: 35px;
+	padding-left: 50px;
 	font-family: AndaleMono;
 	font-size: 2rem;
 	font-weight: bold;
