@@ -37,7 +37,7 @@ Other things I would require:
 body{
 font-family: 'Open Sans', sans-serif;
 }	
-.intro{
+#intro{
 	/*background: 
 		linear-gradient(
       		rgba(0, 0, 70, 0.45), 
@@ -109,7 +109,9 @@ header{
 	letter-spacing: 2px;
   	font-family: GothamBold;
   	font-size: 1.125rem;
-  	color : var(--mgrey);
+  	color : #6e6d8e;
+  	color:#9e9db7;
+
 }
   		  
 .menuItem a:before {
@@ -128,6 +130,9 @@ header{
  .menuItem a:hover:before,a:focus:before {
 	visibility: visible;
  	transform: scaleX(1);
+ }
+ .menuItem a:hover{
+ 	color:var(--mgrey);
  }
 .social{
  	text-align: right;
@@ -648,6 +653,10 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	font-size: 2rem;
 	line-height: 3;
 	text-align: center;
+}
+.logoFooter a{
+	color:white;
+	text-decoration: none;
 }
 .logoFooterLarge{
 	font-size: 3rem;
