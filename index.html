@@ -41,7 +41,7 @@
         <source src="media/try2.m4v" type="video/m4v">
         <source src="media/try2.mp4" type="video/mp4">        
       </video >
-      <header id="header">
+      <nav id="header">
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-auto logo">
@@ -50,19 +50,29 @@
               </a>
             </div>
             <div class="col-sm-auto ml-md-auto menuItem">
+              <ul>
                 <a href="#">Home</a>
-            </div>
-            <div class="col-sm-auto menuItem active">
-              <a href="#features">Product</a>
+              </ul>
             </div>
             <div class="col-sm-auto menuItem">
-              <a href="#team">About</a>
+              <ul>
+                <a href="#features">Product</a>
+              </ul>
             </div>
             <div class="col-sm-auto menuItem">
-              <a href="#footer">Contact Us</a>
+              <ul>
+                <a href="#team">About</a>
+              </ul>
             </div>
             <div class="col-sm-auto menuItem">
-              <a href="#blog">Blog</a>
+              <ul>
+                <a href="#footer">Contact Us</a>
+              </ul>
+            </div>
+            <div class="col-sm-auto menuItem">
+              <ul>
+                <a href="#blog">Blog</a>
+              </ul>
             </div>
             <div class="col-sm-auto social">
               <a href="https://www.facebook.com/trackyo/" target="_blank" class="socialIcons">
@@ -77,7 +87,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </nav>
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col">
@@ -343,7 +353,7 @@
         </div>
       </div>
     </section>
-    <section class="alternative">
+    <section id="alternative">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-auto">
@@ -441,7 +451,7 @@
         </div>
       </div>
     </section>
-    <section id="#follow" style="padding-bottom: 50px;">
+    <section id="follow" style="padding-bottom: 50px;">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-auto">
@@ -936,7 +946,31 @@
     <script src="js/jquery.viewportchecker.min.js"></script>
     <script src="js/video.js"></script>
     <script>
-      
+      /*var sections = $('section')
+        , nav = $('nav')
+        , nav_height = nav.outerHeight();
+       
+      $(window).on('scroll', function () {
+        var cur_pos = $(this).scrollTop();
+        sections.each(function() {
+        
+          var top = $(this).offset().top - nav_height,
+              bottom = top + $(this).outerHeight();
+
+          console.log(cur_pos); 
+          console.log(top);
+          console.log(bottom);
+       
+          if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('a').removeClass('active');
+            sections.removeClass('active');
+       
+            $(this).addClass('active');
+            nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+          }
+        });
+      });*/
+
       const header = document.querySelector('#header');
       const heading = document.querySelector('#heading');
       let topOfNav = header.offsetHeight;

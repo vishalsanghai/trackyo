@@ -65,9 +65,8 @@ font-family: 'Open Sans', sans-serif;
 }
 .homeVideo{
     background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -81,7 +80,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
  	background-size: cover;
   	transition: 1s opacity;
 }
-header{	
+nav{	
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: rgba(255,255,255,0.25);
@@ -123,7 +122,10 @@ header{
   	font-size: 1.125rem;
   	color:#9e9db7;
 }
-  		  
+.menuItem > ul{
+	padding-left: 0px;
+	margin-bottom: 0px;
+}  		  
 .menuItem a:before {
 	content: "";
  	position: absolute;
@@ -145,7 +147,7 @@ header{
  	visibility: visible;
  	transform: scaleX(1);
  }
- .menuItem a:hover{
+ .menuItem a:hover, .active a{
  	color:var(--mgrey);
  }
 .social{
@@ -158,7 +160,7 @@ header{
 	padding: 2px;
 	transition: 1s;
 }
-.fixed-nav header{
+.fixed-nav nav{
 	transition:0.5s;
 	padding:0px;
 	position: fixed;
