@@ -49,27 +49,27 @@
               trac<span class="logoLarge">kyo</span><span class="TM">&trade;</span>
               </a>
             </div>
-            <div class="col-sm-auto ml-md-auto menuItem">
+            <div id="menu-home" class="col-sm-auto ml-md-auto menuItem">
               <ul>
                 <a href="#">Home</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-features" class="col-sm-auto menuItem">
               <ul>
                 <a href="#features">Product</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-team" class="col-sm-auto menuItem">
               <ul>
                 <a href="#team">About</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-footer" class="col-sm-auto menuItem">
               <ul>
                 <a href="#footer">Contact Us</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-blog" class="col-sm-auto menuItem">
               <ul>
                 <a href="#blog">Blog</a>
               </ul>
@@ -1000,6 +1000,27 @@
         jQuery('.t2').addClass("hidden").viewportChecker({
           classToAdd: 'visible animated fadeInLeft',
           offset: 100
+          });
+        
+        //setting active class
+        var removeAllActives = function(){
+            //remove ative class from other menu items
+            jQuery(".menuItem").each(function() {
+                jQuery(this).removeClass('active');
+            });
+        };
+        removeAllActives();
+        var urlparts = jQuery(location).attr('href').split('#');
+        if(urlparts.length===1 || urlparts[1]===""){
+            jQuery('#menu-home').toggleClass('active');
+        }else{
+            jQuery('#menu-'+urlparts[urlparts.length-1]).toggleClass('active');
+        }
+        //click handler for active class change
+        jQuery('.menuItem').click(function(){
+            removeAllActives();
+            //add active class for clicked menu item
+            jQuery(this).toggleClass('active');
           });
 
       });
