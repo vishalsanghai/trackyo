@@ -93,7 +93,7 @@ header{
 	height: 80px;
 }
 .logo{
-	padding-left: 50px;
+	padding-left: 100px;
 	font-family: AndaleMono;
 	font-size: 2rem;
 	font-weight: bold;
@@ -101,6 +101,10 @@ header{
 .logoLarge{
 	font-size: 3rem;
 	position: relative;
+}
+.logo a{
+	color:white;
+	text-decoration: none;
 }
 .TM{
 	position: absolute;
@@ -117,9 +121,7 @@ header{
 	letter-spacing: 2px;
   	font-family: GothamBold;
   	font-size: 1.125rem;
-  	color : #6e6d8e;
   	color:#9e9db7;
-
 }
   		  
 .menuItem a:before {
@@ -137,6 +139,10 @@ header{
  }
  .menuItem a:hover:before,a:focus:before {
 	visibility: visible;
+ 	transform: scaleX(1);
+ }
+ .active a:before{
+ 	visibility: visible;
  	transform: scaleX(1);
  }
  .menuItem a:hover{
@@ -163,7 +169,7 @@ header{
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 	height:50px;
 }
-.fixed-nav .logo{
+.fixed-nav .logo a{
 	color: var(--mblue4);	/*DarkBlueBlack*/
 	font-size: 1.5rem;
 }
@@ -528,8 +534,8 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	font-size: x-large;
 	padding-top:0px;
 	padding-bottom: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
 	text-align: center;
 	margin:20px;
 }
