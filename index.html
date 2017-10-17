@@ -49,27 +49,27 @@
               trac<span class="logoLarge">kyo</span><span class="TM">&trade;</span>
               </a>
             </div>
-            <div class="col-sm-auto ml-md-auto menuItem">
+            <div id="menu-home" class="col-sm-auto ml-md-auto menuItem">
               <ul>
                 <a href="#">Home</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-features" class="col-sm-auto menuItem">
               <ul>
                 <a href="#features">Product</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-team" class="col-sm-auto menuItem">
               <ul>
                 <a href="#team">About</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-footer" class="col-sm-auto menuItem">
               <ul>
                 <a href="#footer">Contact Us</a>
               </ul>
             </div>
-            <div class="col-sm-auto menuItem">
+            <div id="menu-blog" class="col-sm-auto menuItem">
               <ul>
                 <a href="#blog">Blog</a>
               </ul>
@@ -987,6 +987,52 @@
         }
       }
       window.addEventListener('scroll', fixNav);
+      window.addEventListener('scroll', changeNav);
+
+      var removeAllActives = function(){
+          jQuery('.menuItem').each(function () {
+              jQuery(this).removeClass('active');
+          });
+      };
+      var sections = [];
+      function changeNav(){
+          if(sections.length===0){
+              //initiate sections
+              jQuery('.menuItem').each(function () {
+                  var currLink = jQuery(this);
+                  var targetId = currLink.find('a').attr("href");
+                  var refElement;
+                  if(targetId==="#"){
+                      refElement = jQuery('#intro');
+                  }else{
+                      refElement = jQuery(targetId);
+                  }
+                  sections.push({target:targetId, top:refElement.position().top-10, menuitem:currLink});
+              });
+              sections.sort(function (a,b) {
+                 return a.top-b.top;
+              });
+          }
+          var scrollPos = jQuery(document).scrollTop();
+          var i;
+          for(i=0;i<sections.length;i++){
+              if(scrollPos<sections[i].top){
+                  console.log(sections[i]);
+                  removeAllActives();
+                  if(i>0){
+                      sections[i-1].menuitem.toggleClass('active');
+                  }else{
+                      sections[0].menuitem.toggleClass('active');
+                  }
+                  break;
+              }
+          }
+          //check bottom
+          if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+              removeAllActives();
+              sections[sections.length-1].menuitem.toggleClass('active');
+          }
+      }
       
       jQuery(document).ready(function() {
         jQuery('#heading').addClass("hidden").viewportChecker({
@@ -1001,7 +1047,6 @@
           classToAdd: 'visible animated fadeInLeft',
           offset: 100
           });
-
       });
 
       var graphicsHeight = $(".graphics").height();
