@@ -173,10 +173,10 @@ nav{
 }
 .fixed-nav .logo a{
 	color: var(--mblue4);	/*DarkBlueBlack*/
-	font-size: 1.5rem;
+	font-size: 1.67rem;
 }
 .fixed-nav .logoLarge{
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 .fixed-nav .menuItem a{
 	color: var(--mblue4);	/*DarkBlueBlack*/
@@ -262,9 +262,12 @@ nav{
 	height:80vh; 
 }
 .graphics{
-background: #E0EAFC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*background: #E0EAFC;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .featuresImage{
@@ -443,6 +446,7 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	display:block;
 	position: relative;
 	background-color: #003d80;
+	background: linear-gradient(to right, #780206, #061161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: 40px;
 	margin-bottom: 100px;
 	margin-top: 100px;
@@ -550,8 +554,8 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	border-bottom-right-radius: 10000px;
 	margin: 0px;
 	padding: 8px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
 	text-decoration: none;
