@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/circle.css">
     <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="/media/vishal/documents/TrackYoTech/Website/Dynamic-Circular-Progress-Bar-with-jQuery-CSS3/jQuery-plugin-progressbar.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -364,6 +365,30 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-sm-12 col-lg-4 center">
+            <div class="iprogress-bar" data-percent="8" data-duration="500"></div>
+            <div class="alternatives">Road Safety Mirrors</div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="iprogress-bar" data-percent="8" data-duration="500"></div>
+            <div class="alternatives">CCTV Surveillance</div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="iprogress-bar" data-percent="12" data-duration="500"></div>
+            <div class="alternatives">Manual Monitoring</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 ml-md-auto">
+            <div class="iprogress-bar" data-percent="20" data-duration="500"></div>
+            <div class="alternatives">Speed Breakers</div>
+          </div>
+          <div class="col-sm-12 col-md-4 mr-md-auto">
+            <div class="iprogress-bar" data-percent="65" data-duration="500"></div>
+            <div class="alternatives">Trackyo</div>
+          </div>
+        </div>
+        <!--<div class="row">
           <div class="col-sm-12 col-md-4">
             <div class="c100 p8 med center">
               <span>8%</span>
@@ -394,8 +419,8 @@
             </div>
             <div class="alternatives">Manual Monitoring</div>
           </div>
-        </div>
-        <div class="row">
+        </div>-->
+        <!--<div class="row">
           <div class="col-sm-12 col-md-4 ml-md-auto">
             <div class="c100 p20 med center">
               <span>20%</span>
@@ -416,7 +441,7 @@
             </div>
             <div class="alternatives">Trackyo</div>
           </div>
-        </div>
+        </div>-->
         <div class="row align-items-center justify-content-center">
           <div class="col-sm-12 col-md-11 col-lg-10">
             <div class="formWant">
@@ -946,7 +971,10 @@
     <script src="js/jquery.viewportchecker.min.js"></script>
     <script src="js/video.js"></script>
     <script src="js/jquery-visible.js"></script>
+    <script src="/media/vishal/documents/TrackYoTech/Website/Dynamic-Circular-Progress-Bar-with-jQuery-CSS3/jQuery-plugin-progressbar.js"></script>
     <script>
+        //$(".iprogress-bar").loading();
+
       /*var sections = $('section')
         , nav = $('nav')
         , nav_height = nav.outerHeight();
@@ -1018,7 +1046,7 @@
           var i;
           for(i=0;i<sections.length;i++){
               if(scrollPos<sections[i].top){
-                  console.log(sections[i]);
+                  //console.log(sections[i]);
                   removeAllActives();
                   if(i>0){
                       sections[i-1].menuitem.toggleClass('active');
@@ -1050,6 +1078,7 @@
           });
       });
 
+      let india=1
       var graphicsHeight = $(".graphics").height();
       var graphicsWidth = $(".graphics").width();
       console.log(graphicsHeight);
@@ -1060,13 +1089,20 @@
       }
       $(window).scroll(function() {
       $('video').each(function(){
-          if ($(this).visible()) {
+          if ($(this).visible(true)) {
               $(this)[0].play();
           } else {
               $(this)[0].pause();
           }
       })
+      $('.iprogress-bar').each(function(){
+          if (($(this).visible())&&(india===1)) {
+              $(".iprogress-bar").loading();
+              india=0;
+          }
+      })
       });
+
       /*var figure = $(".graphics").hover( hoverVideo, hideVideo );
       function hoverVideo(e) {  
       $('video', this).get(0).play(); 
