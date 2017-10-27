@@ -1005,6 +1005,21 @@
       let topOfNav = header.offsetHeight;
       console.log(topOfNav);
       //let heading = document.getElementById("#heading");
+
+      function parallax() {
+          let introHeight = jQuery('#intro').height();
+          let videoElement = jQuery('#bgvid');
+
+          console.log(window.scrollY);
+
+          if(window.scrollY >= introHeight * 0.136) {
+              videoElement.css("position", "absolute");
+          }
+          else {
+              videoElement.css("position", "");
+          }
+      }
+
       function fixNav() {
         if(window.scrollY >= 10) {
           document.body.classList.add('fixed-nav');
@@ -1014,6 +1029,8 @@
           document.body.classList.remove('fixed-nav');
           heading.style.paddingTop = 160+0 + 'px';
         }
+
+        parallax();
       }
       window.addEventListener('scroll', fixNav);
       window.addEventListener('scroll', changeNav);
