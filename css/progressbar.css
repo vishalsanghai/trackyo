@@ -1,0 +1,56 @@
+.iprogress-bar, .iprogress-bar1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  width: 50%;
+}
+
+.iprogress-bar div , .iprogress-bar1 div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.iprogress-bar div span, .iprogress-bar1 div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 175px;
+  height: 175px;
+  width: 175px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.iprogress-bar .background , .iprogress-bar1 .background { background-color: #b3cef6; }
+
+.iprogress-bar .rotate, .iprogress-bar1 .rotate {
+  clip: rect(0 100px 200px 0);
+  background-color: var(--mblue4);
+}
+
+.iprogress-bar .left, .iprogress-bar1 .left {
+  clip: rect(0 100px 200px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+
+.iprogress-bar .right, .iprogress-bar1 .right {
+  clip: rect(0 100px 200px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: var(--mblue4);
+}
+ @keyframes 
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
