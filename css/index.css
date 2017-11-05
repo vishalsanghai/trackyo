@@ -68,6 +68,7 @@ font-family: 'Open Sans', sans-serif;
     background: #000046;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url('../media/bg.png') no-repeat;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -77,12 +78,10 @@ font-family: 'Open Sans', sans-serif;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- 	/*background: url('../media/bg-2.jpg') no-repeat;*/
  	background-size: cover;
- 	
   	transition: 1s opacity;
 }
-nav{	
+nav, .navbar{	
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: rgba(255,255,255,0.25);
@@ -94,10 +93,15 @@ nav{
 	height: 80px;
 }
 .logo{
-	padding-left: 100px;
+	padding: 0px;
 	font-family: AndaleMono;
 	font-size: 2rem;
 	font-weight: bold;
+}
+@media (min-width: 768px) { 
+	.logo{
+		padding-left: 100px;	
+	}
 }
 .logoLarge{
 	font-size: 3rem;
@@ -112,8 +116,12 @@ nav{
 }
 @media(min-width: 810px){
 	.menuItem, .social, .contactItem{
-	padding-top: 35px;
+	padding-top: 29px;
 	}
+}
+.menuItem{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .menuItem a, .contactItem a{
 	position: relative;
@@ -133,7 +141,7 @@ nav{
  	position: absolute;
  	width: 100%;
  	height: 5px;
- 	bottom: -15px;
+ 	bottom: 0px;
  	left: 0;
  	background: white;
  	visibility: hidden;
@@ -151,9 +159,6 @@ nav{
  }
  .menuItem a:hover,.contactItem a:hover, .active a{
  	color:var(--mgrey);
- }
-.social{
- 	text-align: right;
  }
 .socialIcons a{
 	text-decoration: none;
@@ -184,7 +189,7 @@ nav{
 	color: var(--mblue4);	/*DarkBlueBlack*/
 }
 .fixed-nav .menuItem a:before, .fixed-nav .contactItem a:before{
-	bottom: -9px;
+	bottom: 5px;
 	background : var(--mblue4);
 }
 .fixed-nav .menuItem, .fixed-nav .contactItem {
@@ -266,7 +271,7 @@ nav{
 	background-color:var(--mblue4);
 }
 .vpop:hover .fa-long-arrow-right{
-	-webkit-animation: bounce 2s infinite ease-in-out;
+	
 }
 .howItWorks{
 	font-family: GothamLight;

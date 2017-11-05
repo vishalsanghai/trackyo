@@ -4,8 +4,21 @@
     <title>Trackyo | Smart traffic management for Geo-fenced areas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Vishal Sanghai">
+    <meta name="robots" content="noindex, follow">
 
+    <meta name="author" content="Vishal Sanghai">
+    <meta name="description" content="Trackyo employs connected vehicle technology for smart traffic/ asset management at geo-fenced regions (gated communities such as residential townships, airports, business centres etc.).">
+    <meta name="keywords" content="Trackyo, Trackyotech, Yash Agarwal">
+
+    <meta property="og:title" content="Trackyo">
+    <meta property="og:description" content="Trackyo employs connected vehicle technology for smart traffic/ asset management at geo-fenced regions.">
+    <meta property="og:image" content="media/trackyoLogo.png">
+    <meta property="og:url" content="https://www.trackyotech.com/">
+
+    <meta name="twitter:title" content="Plinth'17">
+    <meta name="twitter:description" content="Plinth is the Annual Techno-Management Literary Fest of LNMIIT Jaipur.">
+    <meta name="twitter:image" content="https://plinth.in/media/plinth-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
@@ -42,7 +55,48 @@
         <source src="media/try2.m4v" type="video/m4v">
         <source src="media/try2.mp4" type="video/mp4">        
       </video >
-      <nav id="header">
+      <nav id="header" class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="logo navbar-brand">
+          <a href="#intro">
+            trac<span class="logoLarge">kyo</span><span class="TM">&trade;</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li id="menu-home" class="nav-item active menuItem">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li id="menu-features" class="nav-item menuItem">
+              <a class="nav-link" href="#features">Product</a>
+            </li>
+            <li id="menu-team" class="nav-item menuItem">
+              <a class="nav-link" href="#team">About</a>
+            </li>
+            <li id="menu-blog" class="nav-item menuItem">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item menuItem">
+              <a class="nav-link" href="https://trackyo.typeform.com/to/xW0IrH" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+          <div class="col-sm-auto social">
+            <a href="https://www.facebook.com/trackyo/" target="_blank" class="socialIcons">
+              <img src="media/social/facebook.png"/>
+            </a>
+            <a href="http://www.twitter.com/trackyotpl" target="_blank" class="socialIcons">
+              <img src="media/social/twitter.png"/>
+            </a>
+            <a href="https://www.linkedin.com/company/trackyotech-private-limited" target="_blank" class="socialIcons">
+              <img src="media/social/linkedin.png"/>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--<nav id="header">
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-auto logo">
@@ -88,7 +142,7 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav>-->
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col">
@@ -1053,9 +1107,16 @@
         });
       });*/
 
+      var windowHeight = $(window).height();
+      var headerHeight = $("#header").height();
+      $("#heading").height(windowHeight-headerHeight);
+
+
       const header = document.querySelector('#header');
       const heading = document.querySelector('#heading');
       let topOfNav = header.offsetHeight;
+
+
       
       //let heading = document.getElementById("#heading");
       function fixNav() {
