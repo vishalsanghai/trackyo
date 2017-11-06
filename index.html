@@ -143,9 +143,9 @@
           </div>
         </div>
       </nav>-->
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col">
+      <div class="container-fluid" >
+        <div class="row align-items-center" id="introContent">
+          <div class="col" id="introContentCol">
             <div id="heading">
               <h1>trackyo</h1>
               <h2>Smart Traffic Management for Geo-fenced areas</h2>
@@ -207,12 +207,6 @@
       <div class="f2">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-12 order-md-1 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
-              <div class="text t2">
-                <div class="featuresHeading">Vehicle is tracked</div>
-                <div class="featuresText">Real-time speed and location tracking of the vehicle is done through the Trackyo unit. Driver gets feedback and real-time audio visual alerts during violations and critical situations</div>
-              </div>
-            </div>
             <div class="col-md-6 col-sm-12 order-md-2 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
               <div class="graphics">
                 <video class="video" poster="" preload="auto">
@@ -223,13 +217,20 @@
                 </video>
               </div>
             </div>
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
+              <div class="text t2">
+                <div class="featuresHeading">Vehicle is tracked</div>
+                <div class="featuresText">Real-time speed and location tracking of the vehicle is done through the Trackyo unit. Driver gets feedback and real-time audio visual alerts during violations and critical situations</div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
       <div class="f3">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-12 order-lg-1 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
               <div class="graphics">
                 <video class="video" poster="" preload="auto">
                   <source src="media/product3.webm" type="video/webm">
@@ -239,7 +240,7 @@
                 </video>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12 order-lg-2 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
+            <div class="col-md-6 col-sm-12 order-md-2 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
               <div class="text t1">
                 <div class="featuresHeading">In case of critical situations</div>
                 <div class="featuresText">Security guard connects with the nearest emergency service providers (hospitals, police, fire station) just by the press of a button using our realtime platform</div>
@@ -251,13 +252,7 @@
       <div class="f4">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-12 order-lg-1 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
-              <div class="text t2">
-                <div class="featuresHeading">At the exit point</div>
-                <div class="featuresText">The device is recovered by the security guard and the driver gets a ticket for violation/ incentives for next visit</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 order-lg-2 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
+            <div class="col-md-6 col-sm-12 order-md-2 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
               <div class="graphics">
                 <video class="video" poster="" preload="auto">
                   <source src="media/product4.webm" type="video/webm">
@@ -267,6 +262,13 @@
                 </video>
               </div>
             </div>
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-2" style="padding-left: 0px; padding-right: 0px;" >
+              <div class="text t2">
+                <div class="featuresHeading">At the exit point</div>
+                <div class="featuresText">The device is recovered by the security guard and the driver gets a ticket for violation/ incentives for next visit</div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -544,7 +546,7 @@
           <div class="col-sm-12 col-md-4 col-lg-auto">
             <div class="followElement">
               <a href="https://avpn.asia/deals/trackyotech/" target="_blank">
-                <img src="media/follow/avpn.png" style="width: 180px; top:60px;">              
+                <img src="media/follow/avpn.png" id="avpnFollow" style="width: 180px;">              
               </a>
             </div>
           </div>
@@ -1108,8 +1110,9 @@
       });*/
 
       var windowHeight = $(window).height();
+      var windowWidth = $(window).width();
       var headerHeight = $("#header").height();
-      $("#heading").height(windowHeight-headerHeight);
+      $("#introContent").height(windowHeight-headerHeight);
 
 
       const header = document.querySelector('#header');
@@ -1117,16 +1120,18 @@
       let topOfNav = header.offsetHeight;
 
 
-      
+      console.log(heading.offsetHeight);
       //let heading = document.getElementById("#heading");
       function fixNav() {
         if(window.scrollY >= 10) {
           document.body.classList.add('fixed-nav');
+          console.log(heading.offsetHeight);
+          
           //document.getElementsByClassName('logo').src='media/logo.png';
-          heading.style.paddingTop = 160+topOfNav + 'px';
+          heading.style.paddingTop = topOfNav + 'px';  
         } else {
           document.body.classList.remove('fixed-nav');
-          heading.style.paddingTop = 160+0 + 'px';
+          heading.style.paddingTop = 0 + 'px';  
         }
       }
       window.addEventListener('scroll', fixNav);
