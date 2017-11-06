@@ -89,6 +89,9 @@ nav, .navbar{
 	padding-bottom: 0px;
 	padding-top: 0px;
 }
+.navbar-brand{
+	margin-right: 4rem;
+}
 .logo > img{
 	height: 80px;
 }
@@ -709,6 +712,7 @@ background: linear-gradient(to left, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Fi
 	padding-left: 40px;
 	position: relative;
 	height: inherit;
+	margin-bottom: 50px;
 }
 .day{
 	padding-bottom: 0px;
