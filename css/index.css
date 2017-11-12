@@ -710,7 +710,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 .date{
 	color: var(--mblue4);
 	font-weight: bold;
-	padding-left: 40px;
+	padding-left: 75px;
 	position: relative;
 	height: inherit;
 	margin-bottom: 50px;
@@ -734,7 +734,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 }
 .article{
 	padding-left: 50px;
-	padding-right: 40px;
+	padding-right: 75px;
 	border-left-style: solid;
 	border-color: var(--mblue4);
 	text-align: justify;
@@ -765,7 +765,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 }
 
 #footer{
-	background-color: #0A0A0A;
+	background-color: var(--mdarkbackground);
 	color:white;
 }
 .footerSection{
