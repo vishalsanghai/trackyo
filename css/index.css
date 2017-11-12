@@ -752,8 +752,31 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 .icon{
 	padding: 20px;
 	border-style: solid;
-	border-radius: 50%;
+	border-radius: 50%;;
 	border-color: var(--mblue4);
+}
+#videos{
+	background-color: var(--mdarkbackground);
+	padding-bottom: 75px;
+}
+.videosSectionTitle{
+	padding : 75px;
+	color: white;
+	font-size: xx-large;
+}
+.videosElement{
+	
+}
+.videosElement > img{
+	width: 275px;
+	height: 244px;
+	border-radius: 100%;
+	position: relative;
+	display: block;
+    margin: 0 auto;
+}
+.pop{
+	cursor: zoom-in;
 }
 .alternatives{
 	text-align: center;
