@@ -768,8 +768,8 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	
 }
 .videosElement > img{
-	width: 275px;
-	height: 244px;
+	width: 200px;
+	height: 200px;
 	border-radius: 100%;
 	position: relative;
 	display: block;
