@@ -39,7 +39,8 @@ Other things I would require:
 }
 
 body{
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
 }	
 #intro{
 	/*background: 
@@ -625,10 +626,14 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 }
 .aa{
 	color:var(--mblue4);
-	font-size: xx-large;
+	font-size: 2.5rem;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
+}
+.smaller{
+	font-size: x-large;
+	line-height: 1;
 }
 .formWant{
 	color:var(--mblue4);
@@ -692,8 +697,9 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 .followElement > a > img{
 	width:200px;
 	position: relative;
-	margin-left: 25px;
-	margin-right:25px;
+	position: relative;
+	display: block;
+    margin: 0 auto;
 }
 @media (min-width: 768px){
 	#avpnFollow{
@@ -761,11 +767,13 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 }
 .videosSectionTitle{
 	padding : 75px;
+	padding-left: 0px;
+	padding-right: 0px;
 	color: white;
 	font-size: xx-large;
 }
 .videosElement{
-	
+	margin: 25px;	
 }
 .videosElement > img{
 	width: 200px;
@@ -786,7 +794,9 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	color: var(--mblue4);
 	font-size: x-large;
 }
-
+.percentage{
+	font-size: 22px;
+}
 #footer{
 	background-color: var(--mdarkbackground);
 	color:white;
