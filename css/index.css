@@ -36,7 +36,7 @@ Other things I would require:
 }
 .hameid-loader-overlay {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /*background: url('../media/preloader.gif') center no-repeat #fff;*/
 	background: var(--mdarkbackground);  /* fallback for old browsers */
     z-index: 99999;
@@ -45,9 +45,13 @@ Other things I would require:
 .logoLoader{
 	padding-bottom: 200px;
 	font-family: AndaleMono;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	color: white;
+}
+.logoLargeLoader{
+	font-size: 3rem;
+	position: relative;
 }
 .cs-loader {
   position: absolute;
