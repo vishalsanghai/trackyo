@@ -21,6 +21,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="none" onload="this.media='all';">
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="css/video.css">
     <!--<link rel="stylesheet" href="css/circle.css">-->
@@ -33,7 +34,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
-
+    <script type="text/javascript">
+      let x=0;
+      document.fonts.load('10pt "AndaleMono"').then(x=1);
+    </script>
     <script src="https://use.fontawesome.com/e9de4e82e4.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56286897-6"></script>
@@ -207,7 +211,7 @@ gtag('config', 'UA-56286897-6');
                   <source src="media/product1.m4v" type="video/m4v">
                   <source src="media/product1.mkv" type="video/mkv">
                   <source src="media/product1.mp4" type="video/mp4">
-                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!
+                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="media/product1.webm">download it</a> and watch it with your favorite video player!
                 </video>
               </div>
             </div>
@@ -225,11 +229,11 @@ gtag('config', 'UA-56286897-6');
           <div class="row">
             <div class="col-md-6 col-sm-12 order-md-2 order-sm-1" style="padding-left: 0px; padding-right: 0px;" >
               <div class="graphics">
-                <video class="video" poster="" preload="auto">
+                <video class="video" poster="" preload="auto" autoplay>
                   <source src="media/product2.webm" type="video/webm">
                   <source src="media/product2.m4v" type="video/m4v">
                   <source src="media/product2.mp4" type="video/mp4">
-                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!
+                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="media/product2.webm">download it</a> and watch it with your favorite video player!
                 </video>
               </div>
             </div>
@@ -252,7 +256,7 @@ gtag('config', 'UA-56286897-6');
                   <source src="media/product3.webm" type="video/webm">
                   <source src="media/product3.m4v" type="video/m4v">
                   <source src="media/product3.mp4" type="video/mp4">
-                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!
+                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="media/product3.webm">download it</a> and watch it with your favorite video player!
                 </video>
               </div>
             </div>
@@ -274,7 +278,7 @@ gtag('config', 'UA-56286897-6');
                   <source src="media/product4.webm" type="video/webm">
                   <source src="media/product4.m4v" type="video/m4v">
                   <source src="media/product4.mp4" type="video/mp4">
-                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!
+                  Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="media/product4.webm">download it</a> and watch it with your favorite video player!
                 </video>
               </div>
             </div>
@@ -1138,9 +1142,11 @@ gtag('config', 'UA-56286897-6');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script>
-      $(window).on('load', function(){
-        $(".hameid-loader-overlay").fadeOut("slow");
-      });
+      if(x===1) {
+        $(window).on('load', function(){
+          $(".hameid-loader-overlay").fadeOut("slow");
+        });
+      }
     </script>
     <noscript>
       <style>.hameid-loader-overlay { display: none; } </style>
@@ -1186,7 +1192,7 @@ const header1 = document.querySelector('#header');
 const heading1 = document.querySelector('#heading');
 let topOfNav = header1.offsetHeight;
 
-console.log(heading1.offsetHeight);
+//console.log(heading1.offsetHeight);
 //let heading = document.getElementById("#heading");
 function fixNav() {
   if (window.scrollY >= 10) {
@@ -1212,7 +1218,7 @@ var sections = [];
 function changeNav() {
   if (sections.length === 0) {
     //initiate sections
-    jQuery('.menuItem').each(function() {
+    $('.menuItem').each(function() {
       var currLink = jQuery(this);
       var targetId = currLink.find('a').attr('href');
       var refElement;

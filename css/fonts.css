@@ -1,0 +1,16 @@
+@font-face {
+    font-family: AndaleMono;
+    src: local('AndaleMono'), url(../fonts/Andale-Mono/AndaleMono.ttf);
+}
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamBold/GothamBold.ttf);
+}
+@font-face {
+    font-family: GothamUltra;
+    src: url(../fonts/GothamUltra/GothamUltra.ttf);
+}
+@font-face {
+    font-family: GothamLight;
+    src: url(../fonts/GothamLight/GothamLight.ttf);
+}

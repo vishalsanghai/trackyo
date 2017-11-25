@@ -7,22 +7,6 @@ Other things I would require:
 5.Team pics, Social Media handles, Positions(for Dr. Orkun)
 6.Documents for T&C, Privacy Policy, etc.
 */
-@font-face {
-    font-family: AndaleMono;
-    src: url(../fonts/Andale-Mono/AndaleMono.ttf);
-}
-@font-face {
-    font-family: GothamBold;
-    src: url(../fonts/GothamBold/GothamBold.ttf);
-}
-@font-face {
-    font-family: GothamUltra;
-    src: url(../fonts/GothamUltra/GothamUltra.ttf);
-}
-@font-face {
-    font-family: GothamLight;
-    src: url(../fonts/GothamLight/GothamLight.ttf);
-}
 :root{
 	--mblue: #0038A8;
 	--mblue2: #05668C;
