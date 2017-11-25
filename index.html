@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
     <script type="text/javascript">
       let x=0;
-      document.fonts.load('10pt "AndaleMono"').then(x=1);
+      document.fonts.load("AndaleMono").then(x=1);
     </script>
     <script src="https://use.fontawesome.com/e9de4e82e4.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -54,7 +54,7 @@ gtag('config', 'UA-56286897-6');
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/16c0c49455c4da40b285d614e/1e0dcfec08d4833f57f74e75d.js");</script>
   </head>
   <body>
-    <div class="hameid-loader-overlay" style="display: flex; justify-content: center; align-items: center;">
+    <div class="hameid-loader-overlay" style="display: flex; justify-content: center; align-items: center; display: none;">
       <div class="logoLoader">
         trac<span class="logoLargeLoader">kyo</span><span class="TM">&trade;</span>
       </div>
@@ -1143,6 +1143,7 @@ gtag('config', 'UA-56286897-6');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script>
       if(x===1) {
+        $(".hameid-loader-overlay").css("display", "flex");
         $(window).on('load', function(){
           $(".hameid-loader-overlay").fadeOut("slow");
         });
