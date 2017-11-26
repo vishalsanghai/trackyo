@@ -54,8 +54,8 @@ gtag('config', 'UA-56286897-6');
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/16c0c49455c4da40b285d614e/1e0dcfec08d4833f57f74e75d.js");</script>
   </head>
   <body>
-    <div class="hameid-loader-overlay" style="display: flex; justify-content: center; align-items: center; display: none;">
-      <div class="logoLoader">
+    <div class="hameid-loader-overlay" style="display: flex; justify-content: center; align-items: center;">
+      <div class="logoLoader" style="display: none;">
         trac<span class="logoLargeLoader">kyo</span><span class="TM">&trade;</span>
       </div>
       <div class="cs-loader">
@@ -1147,7 +1147,7 @@ gtag('config', 'UA-56286897-6');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script>
       if(x===1) {
-        $(".hameid-loader-overlay").css("display", "flex");
+        $(".logoLoader").css("display", "block");
         $(window).on('load', function(){
           $(".hameid-loader-overlay").fadeOut("slow");
         });
