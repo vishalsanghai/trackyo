@@ -66,10 +66,10 @@ gtag('config', 'UA-56286897-6');
     </div>
     </div>
     <section id="intro">
-      <video class="homeVideo" id="bgvid" playsinline autoplay muted loop style="position:absolute;">
-        <source src="media/try2a.webm" type="video/webm">
-        <source src="media/try2.m4v" type="video/m4v">
-        <source src="media/try2.mp4" type="video/mp4">
+      <video poster="media/bg.jpg" class="homeVideo" id="bgvid" playsinline autoplay muted loop style="position:absolute;">
+        <source class="homeMediaSource" src="media/try2a.webm" type="video/webm">
+        <source class="homeMediaSource" src="media/try2.m4v" type="video/m4v">
+        <source class="homeMediaSource" src="media/try2.mp4" type="video/mp4">
       </video >
       <nav id="header" class="navbar navbar-expand-md">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -1186,6 +1186,10 @@ gtag('config', 'UA-56286897-6');
 
 var windowHeight = $(window).height();
 var windowWidth = $(window).width();
+if(windowWidth<800){
+  $('.homeVideo').hide();
+  
+}
 var headerHeight = $('#header').height();
 $('#introContent').height(windowHeight - headerHeight);
 
