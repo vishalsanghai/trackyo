@@ -147,12 +147,9 @@ body{
     	),
 		url("../media/try1.m4v");
 	background-size: cover;*/
-	
-	
 	color : var(--background-color);
-
- 	/*background-image: url("../media/bg-2.jpg");
- 	background-size: cover;
+ 	/*background-image: url("../media/bg.jpg");*/
+ 	/*background-size: cover;
  	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
  	height: 100vh;
  	width: auto;
@@ -162,18 +159,26 @@ body{
     background: #000046;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: url('../media/bg.jpg') no-repeat;
-    
+    /*background: url('../media/bg.jpg');*/
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     width: auto;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
  	background-size: cover;
+ 	background-repeat: no-repeat;
   	transition: 1s opacity;
+}
+@media(max-width: 800px){
+	#intro{
+		background-image: url("../media/bg.jpg");
+		height: 100vh;
+		background-position:center;
+		background-size: cover;
+    }
 }
 nav, .navbar{	
 	border-bottom-style: solid;
