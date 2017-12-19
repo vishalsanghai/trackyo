@@ -96,7 +96,8 @@ gtag('config', 'UA-56286897-6');
               <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li id="menu-contact" class="nav-item menuItem">
-              <a class="nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link" href="" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+              <!--<a class="nav-link" href="#contact">Contact Us</a>-->
               <!--<a class="nav-link typeform-share link" href="https://trackyo.typeform.com/to/xW0IrH" data-mode="popup" target="_blank">Contact Us </a> 
             <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
             </script>-->
@@ -1069,7 +1070,66 @@ gtag('config', 'UA-56286897-6');
         </div>-->
       </div>
     </section>
-    <section id="contact">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body" id="contact">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <div class="sectionTitle">
+                    Contact Us
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-10">
+                  <form id="gform" method="POST" data-email="hello@trackyotech.com" action="https://script.google.com/macros/s/AKfycbygDLCjdNODCHFUb5OX_vC3W4TaaFdcPu-3xA8gqi46ZUWonv3C/exec">
+                    <div class="row" >
+                      <div class="col">
+                        <input name="fname" type="text" class="my-form" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input name="lname" type="text" class="my-form" placeholder="Last name">
+                      </div>
+                    </div>
+                    <div class="row" >
+                      <div class="col">
+                        <input name="email" type="text" class="my-form" placeholder="Email">
+                      </div>
+                      <div class="col">
+                        <input name="website" type="text" class="my-form" placeholder="Webiste">
+                      </div>
+                    </div>
+                    <div class="row" >
+                      <div class="col">
+                        <textarea name="message" id="message" rows="10" placeholder="Message" class="placeholder my-form"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="contactFormContainer">
+                          <button class="contactForm" href="https://goo.gl/forms/4ZVfXTF2E1HPUtmC2">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-sm-12 col-md-10">
+                  <div id="thankyou_message">
+                    <h2>
+                      <em>Thanks</em> for contacting us!
+                      We will get back to you soon!
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<section id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-auto">
@@ -1120,7 +1180,7 @@ gtag('config', 'UA-56286897-6');
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
       <!--<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="hello@trackyotech.com"
   action="https://script.google.com/macros/s/AKfycbygDLCjdNODCHFUb5OX_vC3W4TaaFdcPu-3xA8gqi46ZUWonv3C/exec">
 
@@ -1152,7 +1212,7 @@ gtag('config', 'UA-56286897-6');
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>-->
-    </section>
+    <!--</section>-->
     <footer id="footer">
       <div class="container-fluid">
         <div class="row">
