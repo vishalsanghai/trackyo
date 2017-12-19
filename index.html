@@ -95,10 +95,11 @@ gtag('config', 'UA-56286897-6');
             <li id="menu-blog" class="nav-item menuItem">
               <a class="nav-link" href="#blog">Blog</a>
             </li>
-            <li class="nav-item menuItem">
-              <a class="nav-link typeform-share link" href="https://trackyo.typeform.com/to/xW0IrH" data-mode="popup" target="_blank">Contact Us </a> 
+            <li id="menu-contact" class="nav-item menuItem">
+              <a class="nav-link" href="#contact">Contact Us</a>
+              <!--<a class="nav-link typeform-share link" href="https://trackyo.typeform.com/to/xW0IrH" data-mode="popup" target="_blank">Contact Us </a> 
             <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
-            </script>
+            </script>-->
             </li>
           </ul>
           <div class="col-sm-auto social">
@@ -1068,7 +1069,90 @@ gtag('config', 'UA-56286897-6');
         </div>-->
       </div>
     </section>
+    <section id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="sectionTitle">
+            Contact Us
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <form id="gform" method="POST" data-email="hello@trackyotech.com" action="https://script.google.com/macros/s/AKfycbygDLCjdNODCHFUb5OX_vC3W4TaaFdcPu-3xA8gqi46ZUWonv3C/exec">
+            <div class="row" >
+              <div class="col">
+                <input name="fname" type="text" class="my-form" placeholder="First name">
+              </div>
+              <div class="col">
+                <input name="lname" type="text" class="my-form" placeholder="Last name">
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col">
+                <input name="email" type="text" class="my-form" placeholder="Email">
+              </div>
+              <div class="col">
+                <input name="website" type="text" class="my-form" placeholder="Webiste">
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col">
+                <textarea name="message" id="message" rows="10" placeholder="Message" class="placeholder my-form"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="contactFormContainer">
+                  <button class="contactForm" href="https://goo.gl/forms/4ZVfXTF2E1HPUtmC2">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-10">
+          <div id="thankyou_message">
+            <h2>
+              <em>Thanks</em> for contacting us!
+              We will get back to you soon!
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="hello@trackyotech.com"
+  action="https://script.google.com/macros/s/AKfycbygDLCjdNODCHFUb5OX_vC3W4TaaFdcPu-3xA8gqi46ZUWonv3C/exec">
 
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="What your Mom calls you" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>-->
+    </section>
     <footer id="footer">
       <div class="container-fluid">
         <div class="row">
@@ -1141,6 +1225,8 @@ gtag('config', 'UA-56286897-6');
       </div>
 
     </footer>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
