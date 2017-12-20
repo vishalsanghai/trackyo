@@ -595,7 +595,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	color:white;
 	padding: 70px;
 	font-size: 2.5rem;
-	
+	text-align: center;
 }
 .member-box{
 	display:block;
@@ -721,6 +721,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	color:var(--mblue4);
 	padding: 50px;
 	font-size: xx-large;
+	text-align: center;
 }
 .aa{
 	color:var(--mblue4);
@@ -814,7 +815,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 .date{
 	color: var(--mblue4);
 	font-weight: bold;
-	padding-left: 75px;
+	padding-left: 50px;
 	position: relative;
 	height: inherit;
 	margin-bottom: 50px;
@@ -858,6 +859,15 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	border-style: solid;
 	border-radius: 50%;;
 	border-color: var(--mblue4);
+}
+.blogPostImage{
+	padding-top: 25px;
+
+}
+@media(max-width: 800px){
+	.blogPostImage{
+		display: none;
+	}
 }
 #videos{
 	background-color: var(--mdarkbackground);
