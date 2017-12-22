@@ -189,7 +189,10 @@ nav, .navbar{
 	padding-top: 0px;
 }
 .navbar-brand{
-	margin-right: 4rem;
+	margin-right: 10rem;
+}
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .logo > img{
 	height: 80px;
@@ -396,6 +399,14 @@ nav, .navbar{
 .graphics, .text{
 	height:80vh; 
 }
+@media(max-width: 800px){
+	.graphics{
+		height:60vh;
+	}
+	.text{
+		height: auto;
+	}
+}
 .graphics{
 background: #E0EAFC;  /* fallback for old browsers */
 background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -431,10 +442,10 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 }
 @media(max-width: 800px){
 	.text{
-		margin-left: 20px;
-		margin-right: 20px;
-		padding-top: 25px;
-		padding-bottom: 25px;	
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;	
 	}
 }
 .f1 .f3 > .text{
@@ -468,7 +479,6 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	.featuresText{
 		font-size: 1rem;
 	}
-
 }
 #innovation{
 	background-image: url(../media/howItWorks3a.jpeg);
@@ -773,7 +783,16 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	padding-bottom: 50px;
 }
 .partnerElement{
-	margin: 25px;
+	padding: 25px;
+}
+@media(max-width: 800px){
+	.partnerElement{
+		padding: 20px;
+	}
+	.featuredElement > a > img{
+		top : 0px;
+		bottom: 0px;
+	}
 }
 .partnerElement > img{
 	width:200px;
@@ -781,6 +800,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	display: block;
     margin: 0 auto;
 }
+
 #nebula{
 	width: 170px;
 }
@@ -792,6 +812,9 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	position: relative;
 	display: block;
     margin: 0 auto;
+}
+.followElement{
+	padding : 20px;
 }
 .followElement > a > img{
 	width:200px;
@@ -899,8 +922,13 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	cursor: zoom-in;
 }
 .alternatives{
+	/*background-image: url(../media/howItWorks3a.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100%;
+	background-attachment: fixed;*/
+
 	text-align: center;
-	
 	padding: 75px;
 	padding-top: 20px;
 	color: var(--mblue4);
