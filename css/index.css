@@ -849,6 +849,12 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	font-size: x-large;
 	padding-bottom: 20px;
 }
+.articleDate{
+	font-size: smaller;
+	font-weight: bold;
+	color: --var(--mblue4);
+	padding-bottom: 5px;
+}
 .articleContent{
 	padding-bottom: 20px;
 }
@@ -861,8 +867,6 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	border-color: var(--mblue4);
 }
 .blogPostImage{
-	padding-top: 25px;
-
 }
 @media(max-width: 800px){
 	.blogPostImage{
