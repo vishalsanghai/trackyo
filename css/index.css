@@ -334,7 +334,7 @@ nav, .navbar{
 	display: inline-block;
 	border-style: solid;
 	border-color: var(--mblue4);
-	border-bottom-left-radius: 10000px;
+	border-top-left-radius: 10000px;
 	border-top-right-radius: 10000px;
 	border-bottom-right-radius: 10000px;
 	margin:20px;
@@ -767,7 +767,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	border-style: solid;
 	color:var(--mblue4);
 	border-color: var(--mblue4);
-	border-bottom-left-radius: 10000px;
+	border-top-left-radius: 10000px;
 	border-top-right-radius: 10000px;
 	border-bottom-right-radius: 10000px;
 	margin: 0px;
@@ -976,7 +976,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	border-style: solid;
 	color:var(--mblue4);
 	border-color: var(--mblue4);
-	border-bottom-left-radius: 10000px;
+	border-top-left-radius: 10000px;
 	border-top-right-radius: 10000px;
 	border-bottom-right-radius: 10000px;
 	margin: 0px;
