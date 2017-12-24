@@ -487,11 +487,17 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 #innovation{
 	background-image: url(../media/howItWorks3a.jpeg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	
+	background-size: cover;	
 	height:100%;
 	background-attachment: fixed;
 	padding-bottom: 100px;
+}
+@media(max-width: 800px){
+	#innovation{
+		background: #D3CCE3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+	}
 }
 .innovationIntro{
 	padding-top: 100px;
