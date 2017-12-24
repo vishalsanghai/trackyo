@@ -21,6 +21,14 @@ Other things I would require:
 html{
 	height:100%;
 }
+@media(max-width: 800px){
+	#intro{
+		background-image: url("../media/bg.jpg");
+		height: 100vh;
+		background-position:center;
+		background-size: cover;
+    }
+}
 .hameid-loader-overlay {
     width: 100%;
     height: 100vh;
@@ -174,14 +182,6 @@ body{
  	background-size: cover;
  	background-repeat: no-repeat;
   	transition: 1s opacity;
-}
-@media(max-width: 800px){
-	#intro{
-		background-image: url("../media/bg.jpg");
-		height: 100vh;
-		background-position:center;
-		background-size: cover;
-    }
 }
 nav, .navbar{	
 	border-bottom-style: solid;
@@ -910,13 +910,14 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	padding-right: 0px;
 	color: white;
 	font-size: xx-large;
+	text-align: center;
 }
 .videosElement{
 	margin: 25px;	
 }
 .videosElement > img{
-	width: 200px;
-	height: 200px;
+	width: 225px;
+	height: 225px;
 	border-radius: 100%;
 	position: relative;
 	display: block;
