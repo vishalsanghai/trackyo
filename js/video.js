@@ -6,7 +6,7 @@ $(".vpop").on('click', function(e) {
     
   if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
   
-  $("#video-popup-iframe").attr('src', srchref+id+autoplay);
+  $("#video-popup-iframe").attr('src', srchref+id+autoplay+'&rel=0');
   
   $("#video-popup-iframe").on('load', function() {
     $("#video-popup-container").show();
@@ -21,7 +21,7 @@ $(".pop").on('click', function(e) {
     
   if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
   
-  $("#video-popup-iframe").attr('src', srchref+id+autoplay);
+  $("#video-popup-iframe").attr('src', srchref+id+autoplay+'&rel=0');
   
   $("#video-popup-iframe").on('load', function() {
     $("#video-popup-container").show();
