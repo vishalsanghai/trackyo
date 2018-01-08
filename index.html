@@ -482,19 +482,19 @@ gtag('config', 'UA-56286897-6');
         </div>
         <div class="row">
           <div class="col-sm-12 col-lg-4 center">
-            <div class="iprogress-bar" data-percent="8" data-duration="497" data-abc="Road Safety Mirror.jpg"></div>
+            <div class="iprogress-bar" data-percent="8" data-duration="497" data-abc="RoadSafetyMirror.jpg"></div>
             <div class="alternatives">
               <span class="percentage">8% </span><br>Road Safety Mirrors
             </div>
           </div>
           <div class="col-sm-12 col-lg-4">
-            <div class="iprogress-bar" data-percent="8" data-duration="498" data-abc="cctv2.jpg"></div>
+            <div class="iprogress-bar" data-percent="8" data-duration="498" data-abc="cctv.jpg"></div>
             <div class="alternatives">
               <span class="percentage">8% </span><br>CCTV Surveillance
             </div>
           </div>
           <div class="col-sm-12 col-lg-4">
-            <div class="iprogress-bar" data-percent="12" data-duration="499" data-abc="Manual Monitoring.jpg"></div>
+            <div class="iprogress-bar" data-percent="12" data-duration="499" data-abc="ManualMonitoring.jpg"></div>
             <div class="alternatives">
               <span class="percentage">12% </span><br>Manual Monitoring
             </div>
@@ -502,7 +502,7 @@ gtag('config', 'UA-56286897-6');
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-4 ml-md-auto">
-            <div class="iprogress-bar1" data-percent="20" data-duration="500" data-abc="Speed Breakers.png"></div>
+            <div class="iprogress-bar1" data-percent="20" data-duration="500" data-abc="SpeedBreakers.png"></div>
             <div class="alternatives">
               <span class="percentage">20% </span><br>Speed Breakers
             </div>
@@ -1366,7 +1366,6 @@ var windowHeight = $(window).height();
 var windowWidth = $(window).width();
 if(windowWidth<800){
   $('.homeVideo').hide();
-  
 }
 var headerHeight = $('#header').height();
 $('#introContent').height(windowHeight - headerHeight);
@@ -1391,6 +1390,18 @@ function fixNav() {
 }
 window.addEventListener('scroll', fixNav);
 window.addEventListener('scroll', changeNav);
+
+/*Preload images script*/
+
+var myimages=new Array()
+function preloadimages(){
+for (i=0;i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+preloadimages("media/survey/RoadSafetyMirror.jpg","media/survey/cctv.jpg","media/survey/ManualMonitoring.jpg","media/survey/SpeedBreakers.png","media/survey/Trackyo.jpg")
 
 var removeAllActives = function() {
   jQuery('.menuItem').each(function() {
