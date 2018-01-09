@@ -108,6 +108,58 @@
           </div>
         </div>          
       </div>
+      <div class="row justify-content-center blogPost" style="background-color: #eee;">
+        <div class="col-sm-12 col-md-6">
+          <img class="blogPostImage" src="media/blog.png">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="article">
+            <div class="title">
+              Trackyo Building connected vehicle technology to track and modify driver behavior in gated communities
+            </div>
+            <div class="articleDate">
+              18 May 2017
+            </div>
+            <div class="articleContent">
+              Trackyo is an early-stage connected vehicle startup based out of Hyderabad. They are designing customized security solutions for vehicle monitoring and driver assistance systems targeting gated societies. By gated societies, we refer to areas secured by gates and security guards at entry and exit points i.e., areas including but not limited to: residential townships/societies/ blocks, business centers, corporate structures, etc.
+            </div>
+            <div class="icons">
+              <a target="_blank" href="http://startupsimba.com/start-up-stories/hyderabad-based-startup-trackyo-building-connected-vehicle-technology-to-track-and-modify-driver-behavior-in-gated-communities/">
+                <i class="fa fa-long-arrow-right icon" aria-hidden="true"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/sharer/?u=http%3A%2F%2Fstartupsimba.com%2Fstart-up-stories%2Fhyderabad-based-startup-trackyo-building-connected-vehicle-technology-to-track-and-modify-driver-behavior-in-gated-communities%2F">
+                <i class="fa fa-share-alt icon" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>          
+      </div>
+      <div class="row justify-content-center blogPost">
+        <div class="col-sm-12 col-md-6">
+          <img class="blogPostImage" src="media/blog.png">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="article">
+            <div class="title">
+              Trackyo for gated communities
+            </div>
+            <div class="articleDate">
+              2 November 2017
+            </div>
+            <div class="articleContent">
+              Trackyo brings you a real-time vehicle monitoring system that aids in tracking vehicles in the aforementioned regions. The device tracks the speed and the location of the vehicle and gives audio-visual alerts to the vehicle driver. A warning is also transmitted to the security stations and a message is broadcast to the surrounding vehicles. Such warnings help other drivers to timely respond and avoid potential crashes.
+            </div>
+            <div class="icons">
+              <a target="_blank" href="https://indianceo.in/startup-directory/trackyo/">
+                <i class="fa fa-long-arrow-right icon" aria-hidden="true"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/sharer?u=https%3A%2F%2Findianceo.in%2Fstartup-directory%2Ftrackyo%2F">
+                <i class="fa fa-share-alt icon" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>          
+      </div>
   </section>
   <div style="height: 25px;">
   </div>

@@ -804,7 +804,7 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 		bottom: 0px;
 	}
 }
-.partnerElement > img{
+.partnerElement > a > img{
 	width:200px;
 	position: relative;
 	display: block;
