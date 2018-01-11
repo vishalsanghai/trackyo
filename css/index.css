@@ -751,8 +751,9 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	text-align: center;
 }
 .smaller{
+	padding-top: 15px;
 	font-size: x-large;
-	line-height: 1;
+	line-height: 1.4;
 }
 .formWant{
 	color:var(--mblue4);
@@ -760,6 +761,17 @@ background: linear-gradient(to left, #141e30, #243b55); /* W3C, IE 10+/ Edge, Fi
 	padding-top: 25px;
 	padding-bottom: 20px;
 	text-align: center;
+}
+@media(max-width: 800px){
+	.aa{
+		font-size: 2rem;
+	}
+	.smaller{
+		font-size: 1.2rem;
+	}
+	.formWant{
+		font-size: 1.5rem;
+	}
 }
 .formContainer{
 	color:var(--mblue4);
